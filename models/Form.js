@@ -5,7 +5,7 @@ const formSchema = new mongoose.Schema({
   phoneNumber: { type: String, required: true },
   countryCode: { type: String, required: true },
   email: { type: String },
-  popupType: { type: String, required: true }, // 🚨 Required field!
+  enquiryType: { type: String, required: true }, // 🚨 Required field!
   submittedAt: { type: Date, default: Date.now },
 });
 

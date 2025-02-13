@@ -5,8 +5,8 @@ const router = express.Router();
 // Submit Form
 router.post("/", async (req, res) => {
   try {
-    if (!req.body.popupType) {
-      return res.status(400).json({ success: false, message: "popupType is required!" });
+    if (!req.body.enquiryType) {
+      return res.status(400).json({ success: false, message: "enquiryType is required!" });
     }
 
     const newForm = new Form(req.body);
